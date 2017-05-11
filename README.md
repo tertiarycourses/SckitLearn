@@ -1,5 +1,5 @@
 # Python Machine Learning with Scikits Learn Training
-## by [Tertiary Infotech Pte. Ltd] (https://www.tertiarycourses.com.sg/)
+## by [Tertiary Infotech Pte. Ltd](https://www.tertiarycourses.com.sg/)
 
 These are the exercise files used for [Python Machine Learning with Scikits Learn Training](https://www.tertiarycourses.com.sg/python-machine-learning-with-scikits-learn-training.html) course. 
 

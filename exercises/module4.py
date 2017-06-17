@@ -12,6 +12,19 @@
 import matplotlib.pyplot as plt
 import numpy as np 
 
+<<<<<<< HEAD
+# X = np.array([
+# 	[1,2],
+# 	[1.5,1.8],
+# 	[5,8],
+# 	[8,8],
+# 	[1,0.6],
+# 	[9,11]
+# 	])
+
+# plt.scatter(X[:,0],X[:,1])
+# plt.show()
+=======
 
 X = np.array([
 	[1,2],
@@ -24,6 +37,7 @@ X = np.array([
 
 #plt.scatter(X[:,0],X[:,1])
 #plt.show()
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
 # Step 1 Model
 # from sklearn import cluster
@@ -69,6 +83,41 @@ X = np.array([
 # print(y[::50])
 
 
+<<<<<<< HEAD
+# from scipy.cluster.hierarchy import dendrogram, linkage
+
+# import matplotlib.pyplot as plt
+# import seaborn as sb
+
+# MeanShift Clustering
+
+# X = np.array([
+# 	[1,2],
+# 	[1.5,1.8],
+# 	[5,8],
+# 	[8,8],
+# 	[1,0.6],
+# 	[9,11]
+# 	])
+
+# from sklearn.datasets.samples_generator import make_blobs
+# centers = [[1,1],[1.5,1.5],[2,2]]
+# X,y = make_blobs(n_samples=100,centers=centers, cluster_std=0.1)
+# # plt.scatter(X[:,0],X[:,1])
+# # plt.show()
+
+# Step 1 Model
+# from sklearn.cluster import MeanShift
+# clf = MeanShift()
+
+# Step 2 Training
+# clf.fit(X)
+
+# Step 3 Labeling
+# labels = clf.labels_
+# c = clf.cluster_centers_
+# print(c)
+=======
 # Hierachical Clustering
 
 # from sklearn.datasets.samples_generator import make_blobs
@@ -89,6 +138,7 @@ X = np.array([
 
 # print(c)
 
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 # n = len(np.unique(labels))
 # print("number of clusters",n)
 
@@ -102,9 +152,15 @@ X = np.array([
 # plt.show()
 
 # Exercise
+<<<<<<< HEAD
+# from sklearn import datasets
+# iris = datasets.load_iris()
+# X,y = iris.data,iris.target
+=======
 from sklearn import datasets
 iris = datasets.load_iris()
 X,y = iris.data,iris.target
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
 # from sklearn.cluster import MeanShift
 # clf = MeanShift()
@@ -115,6 +171,50 @@ X,y = iris.data,iris.target
 # n = len(np.unique(labels))
 # print("number of clusters",n)
 
+<<<<<<< HEAD
+
+# AgglomerativeClustering
+
+from sklearn.datasets.samples_generator import make_blobs
+centers = [[1,1],[1.5,1.5],[2,2]]
+X,y = make_blobs(n_samples=100,centers=centers, cluster_std=0.1)
+# # plt.scatter(X[:,0],X[:,1])
+# # plt.show()
+
+# Step 1 Model
+from sklearn.cluster import AgglomerativeClustering
+clf = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')
+
+# Step 2 Training
+clf.fit(X)
+
+# Step 3 Labeling
+labels = clf.labels_
+print(labels)
+print(y)
+
+
+# from sklearn.cluster import AgglomerativeClustering
+# import sklearn.metrics as sm
+# plt.figure(figsize=(10, 3))
+
+# plt.style.use('seaborn-whitegrid')
+
+# from sklearn import datasets
+# iris = datasets.load_iris()
+# X,y = iris.data,iris.target
+# Z = linkage(X, 'ward')
+# dendrogram(Z, truncate_mode='lastp', p=12, leaf_rotation=45., leaf_font_size=15., show_contracted=True)
+# plt.title('Truncated Hierarchical Clustering Dendrogram')
+# plt.xlabel('Cluster Size')
+# plt.ylabel('Distance')
+# plt.show()
+
+# k=3
+# Hclustering = AgglomerativeClustering(n_clusters=k, affinity='manhattan', linkage='average')
+# Hclustering.fit(X)
+# print(sm.accuracy_score(y, Hclustering.labels_))
+=======
 # Pricipal Component Analysis
 
 from sklearn import decomposition
@@ -142,6 +242,7 @@ plt.show()
 # iris = datasets.load_iris()
 
 # X,y = iris.data, iris.target
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
 
 # Module 5: Intro to Neural Networks

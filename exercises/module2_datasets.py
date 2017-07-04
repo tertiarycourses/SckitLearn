@@ -3,17 +3,13 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
+# Module 2: Datasets
+
 import numpy as np 
 import matplotlib.pyplot as plt 
 from sklearn import datasets
 
-# Module 2: Datasets
-
 # Iris dataset
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 iris = datasets.load_iris()
 
 # print(iris)
@@ -24,21 +20,13 @@ iris = datasets.load_iris()
 import pandas as pd
 df = pd.DataFrame(iris.data, columns=iris.feature_names)
 print(df.head())
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 #iris = datasets.load_iris()
 
 #print(iris)
 #print(iris.data)
 #print(iris.target)
 #print(iris.feature_names)
-<<<<<<< HEAD
-=======
->>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
->>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # i = 2
 # j = 3
 
@@ -131,10 +119,6 @@ print(df.head())
 #print(y_test)
 
 #Exercise
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # from sklearn.model_selection import train_test_split
 
 # digits = datasets.load_digits()
@@ -144,10 +128,6 @@ print(df.head())
 # X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25)
 
 # print(y_train)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 from sklearn.model_selection import train_test_split
 
 digits = datasets.load_digits()
@@ -157,4 +137,4 @@ y = digits.target
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25)
 
 print(y_train)
->>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
+

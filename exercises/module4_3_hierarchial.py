@@ -3,8 +3,7 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
-
-# Module 4: Hierachical Clustering
+# Module 4.3: Hierachical Clustering
 
 import matplotlib.pyplot as plt
 import numpy as np 
@@ -106,48 +105,6 @@ plt.ylabel('Distance')
 plt.axhline(y=500)
 plt.axhline(y=150)
 plt.show()
-
-# Pricipal Component Analysis
-
-# from sklearn import decomposition
-# pca = decomposition.PCA()
-
-# pca.fit(X)
-# pca.n_components = 2 
-
-# X_reduced = pca.fit_transform(X)
-
-# plt.scatter(X_reduced[:,0],X_reduced[:,1],c=y)
-# plt.show()
-#print(pca.explained_variance_)
-
-
-# digits = datasets.load_digits()
-
-# X,y = digits.data, digits.target
-
-# from sklearn.cross_validation import train_test_split
-# X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25)
-
-# print(y_test)
-
-# iris = datasets.load_iris()
-
-# X,y = iris.data, iris.target
-
-# Module 5: Intro to Neural Networks
-
-# iris = datasets.load_iris()
-# X,y = iris.data, iris.target
-
-# from sklearn import neural_network
-# clf = neural_network.MLPClassifier(2,10,30)
-
-# clf.fit(X_train,y_train)
-
-# clf.predict(X_test)
-# print(y_test)
-
 
 
 

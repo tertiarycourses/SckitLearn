@@ -3,9 +3,8 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
-# Module 3: Model Persistence
+# Module 3.2a: Pickle
 
-# joblib Method
 from sklearn import datasets
 iris = datasets.load_iris()
 X,y = iris.data, iris.target

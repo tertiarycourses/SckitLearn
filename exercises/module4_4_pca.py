@@ -3,8 +3,7 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
-
-# Module 4-2: Pricipal Component Analysis
+# Module 4.5: Pricipal Component Analysis
 
 import numpy as np
 import pandas as pd

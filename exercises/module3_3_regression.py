@@ -3,7 +3,7 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
-# Regression
+# Module 3.3: Regression
 
 # Create a simple dataset
 # import numpy as np

@@ -3,9 +3,7 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
-# Module 3: Model Persistence
-
-# joblib Method
+# Module 3.2b: joblib 
 
 # from sklearn.externals import joblib
 # clf = joblib.load('mymodel.pkl') 

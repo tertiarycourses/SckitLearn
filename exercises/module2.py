@@ -20,7 +20,12 @@ iris = datasets.load_iris()
 import pandas as pd
 df = pd.DataFrame(iris.data, columns=iris.feature_names)
 print(df.head())
+#iris = datasets.load_iris()
 
+#print(iris)
+#print(iris.data)
+#print(iris.target)
+#print(iris.feature_names)
 # i = 2
 # j = 3
 
@@ -122,3 +127,12 @@ print(df.head())
 # X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25)
 
 # print(y_train)
+from sklearn.model_selection import train_test_split
+
+digits = datasets.load_digits()
+X = digits.data
+y = digits.target
+
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25)
+
+print(y_train)

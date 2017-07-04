@@ -24,6 +24,18 @@ import numpy as np
 # plt.scatter(X[:,0],X[:,1])
 # plt.show()
 
+# X = np.array([
+# 	[1,2],
+# 	[1.5,1.8],
+# 	[5,8],
+# 	[8,8],
+# 	[1,0.6],
+# 	[9,11]
+# 	])
+
+#plt.scatter(X[:,0],X[:,1])
+#plt.show()
+
 # Step 1 Model
 # from sklearn import cluster
 # clf = cluster.KMeans(n_clusters=2)
@@ -44,16 +56,34 @@ import numpy as np
 # plt.show()
 
 # Iris dataset
-# from sklearn import datasets
-# iris = datasets.load_iris()
-# X,y = iris.data,iris.target
+from sklearn import datasets
+iris = datasets.load_iris()
+X,y = iris.data,iris.target
 
-# from sklearn import cluster
-# c = cluster.KMeans(n_clusters=3)
-# c.fit(X) 
+# from sklearn.preprocessing import scale
+# X = scale(iris.data)
 
-# print(c.labels_[::10])
-# print(y[::10])
+from sklearn import cluster
+c = cluster.KMeans(n_clusters=3, random_state=5)
+c.fit(X) 
+
+print(c.labels_[::10])
+print(y[::10])
+
+
+import pandas as pd
+iris_df = pd.DataFrame(iris.data)
+iris_df.columns = ['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width']
+
+color_theme = np.array(['darkgray', 'lightsalmon', 'powderblue'])
+plt.subplot(1,2,1)
+plt.scatter(x=iris_df.Petal_Length,y=iris_df.Petal_Width, c=color_theme[iris.target], s=50)
+plt.title('Ground Truth Classification')
+
+plt.subplot(1,2,2)
+plt.scatter(x=iris_df.Petal_Length,y=iris_df.Petal_Width, c=color_theme[c.labels_], s=50)
+plt.title('K-Means Classification')
+plt.show()
 
 # Digits dataset
 # from sklearn import datasets
@@ -101,6 +131,27 @@ import numpy as np
 # labels = clf.labels_
 # c = clf.cluster_centers_
 # print(c)
+
+# Hierachical Clustering
+
+# from sklearn.datasets.samples_generator import make_blobs
+
+# centers = [[1,1],[1.5,1.5],[2,2]]
+
+# X,y = make_blobs(n_samples=100,centers=centers, cluster_std=0.1)
+
+# # plt.scatter(X[:,0],X[:,1])
+# # plt.show()
+
+# from sklearn.cluster import MeanShift
+# clf = MeanShift()
+# clf.fit(X)
+
+# labels = clf.labels_
+# c = clf.cluster_centers_
+
+# print(c)
+
 # n = len(np.unique(labels))
 # print("number of clusters",n)
 
@@ -118,6 +169,10 @@ import numpy as np
 # iris = datasets.load_iris()
 # X,y = iris.data,iris.target
 
+# from sklearn import datasets
+# iris = datasets.load_iris()
+# X,y = iris.data,iris.target
+
 # from sklearn.cluster import MeanShift
 # clf = MeanShift()
 # clf.fit(X)
@@ -128,25 +183,25 @@ import numpy as np
 # print("number of clusters",n)
 
 
-# AgglomerativeClustering
+# Agglomerative Clustering
 
-from sklearn.datasets.samples_generator import make_blobs
-centers = [[1,1],[1.5,1.5],[2,2]]
-X,y = make_blobs(n_samples=100,centers=centers, cluster_std=0.1)
+# from sklearn.datasets.samples_generator import make_blobs
+# centers = [[1,1],[1.5,1.5],[2,2]]
+# X,y = make_blobs(n_samples=100,centers=centers, cluster_std=0.1)
 # # plt.scatter(X[:,0],X[:,1])
 # # plt.show()
 
 # Step 1 Model
-from sklearn.cluster import AgglomerativeClustering
-clf = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')
+# from sklearn.cluster import AgglomerativeClustering
+# clf = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')
 
-# Step 2 Training
-clf.fit(X)
+# # Step 2 Training
+# clf.fit(X)
 
-# Step 3 Labeling
-labels = clf.labels_
-print(labels)
-print(y)
+# # Step 3 Labeling
+# labels = clf.labels_
+# print(labels)
+# print(y)
 
 
 # from sklearn.cluster import AgglomerativeClustering
@@ -170,6 +225,33 @@ print(y)
 # Hclustering.fit(X)
 # print(sm.accuracy_score(y, Hclustering.labels_))
 
+# Pricipal Component Analysis
+
+# from sklearn import decomposition
+# pca = decomposition.PCA()
+
+# pca.fit(X)
+# pca.n_components = 2 
+
+# X_reduced = pca.fit_transform(X)
+
+# plt.scatter(X_reduced[:,0],X_reduced[:,1],c=y)
+# plt.show()
+#print(pca.explained_variance_)
+
+
+# digits = datasets.load_digits()
+
+# X,y = digits.data, digits.target
+
+# from sklearn.cross_validation import train_test_split
+# X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25)
+
+# print(y_test)
+
+# iris = datasets.load_iris()
+
+# X,y = iris.data, iris.target
 
 # Module 5: Intro to Neural Networks
 

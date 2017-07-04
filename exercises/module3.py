@@ -7,6 +7,10 @@
 
 # Classification
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # Setp 1 Get Data
 from sklearn import datasets
 iris = datasets.load_iris()
@@ -22,16 +26,25 @@ X,y = iris.data, iris.target
 # enc.fit([[0, 0, 3], [1, 1, 0], [0, 2, 1], [1, 0, 2]])   
 # print(enc.n_values_)
 # print(enc.transform([[0, 1, 1]]).toarray())
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # Load data and split data
 # from sklearn import datasets
 # iris = datasets.load_iris()
 # X,y = iris.data, iris.target
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
 
 # digits = datasets.load_digits()
 # X,y = digits.data, digits.target
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # Step 2 Randomize Data and Split Data
 # from sklearn.model_selection import train_test_split
 # X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25,random_state=25)
@@ -44,6 +57,10 @@ X,y = iris.data, iris.target
 #clf = neighbors.KNeighborsClassifier(n_neighbors=3,weights='distance',algorithm='kd_tree')
 
 # Support Vector Machine (SVN)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # from sklearn.model_selection import train_test_split
 # X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25,random_state=25)
 
@@ -55,10 +72,15 @@ X,y = iris.data, iris.target
 #clf = neighbors.KNeighborsClassifier(n_neighbors=3,weights='distance',algorithm='kd_tree')
 
 # Support Vector Machine
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 # from sklearn import svm
 # clf = svm.SVC()
 #clf = svm.SVC(kernel='rbf',degree=3)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # Stochastics Gradient Descent (SGD)
 # from sklearn import linear_model
 # clf = linear_model.SGDClassifier()
@@ -89,6 +111,10 @@ X,y = iris.data, iris.target
 
 # copy and paste the output to http://webgraphviz.com/
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 # from sklearn import linear_model
 # clf = linear_model.SGDClassifier()
 
@@ -104,10 +130,16 @@ X,y = iris.data, iris.target
 
 # clf.fit(X_train,y_train)
 
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 # Step 3: Testing
 
 # print(clf.predict(X_test)[:20])
 # print(y_test[:20])
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+>>>>>>> 2b346f7a9151a42ea4a575d6bad5ad8c56e7a89d
 
 # Step 3: Measure the Performance
 
@@ -144,6 +176,7 @@ X,y = iris.data, iris.target
 # print(metrics.classification_report(expected, predicted))
 
 #print(clf.predict([[1.2,2.5,3,4.5]]))
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
 
 # Model Persistence
@@ -159,15 +192,20 @@ X,y = iris.data, iris.target
 # clf = svm.SVC()
 # clf.fit(X_train, y_train)
 
+<<<<<<< HEAD
+=======
 # from sklearn.externals import joblib
 #joblib.dump(clf, 'mymodel.pkl') 
 # clf = joblib.load('mymodel.pkl') 
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489
 
 # print(clf.predict(X_test)[:20])
 # print(y_test[:20])
 # accuracy = clf.score(X_test,y_test)
 # print(accuracy)
 
+<<<<<<< HEAD
+=======
 # Regression
 
 # Create a simple dataset
@@ -211,3 +249,4 @@ X,y = boston.data,boston.target
 # plt.ylabel('Predict Price')
 # plt.show()
 
+>>>>>>> 3ad47ddd1ad349330d29b6fded24e92c23254489

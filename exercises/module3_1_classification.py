@@ -108,60 +108,6 @@ X,y = iris.data, iris.target
 # print(clf.predict(X_test)[:20])
 # print(y_test[:20])
 
-# Step 3: Measure the Performance
 
 
-# predicted = clf.predict(X_test)
-# expected = y_test
-
-# Manual Metric
-# matches = (predicted == expected)
-# score = matches.sum()/len(matches)
-# print("Score = ", score)
-
-# Score Metric
-# score = clf.score(X_test,y_test)
-# print(score)
-
-# from sklearn import metrics
-# print(metrics.classification_report(expected, predicted))
-
-# score = clf.score(X_test,y_test)
-# print(score)
-
-# Step 3: Measure the Performance
-
-# predicted = clf.predict(X_test)
-# expected = y_test
-# matches = (predicted == expected)
-
-# score = matches.sum()/len(matches)
-# print("Score = ", score)
-
-# from sklearn import metrics
-# print(metrics.classification_report(expected, predicted))
-
-#print(clf.predict([[1.2,2.5,3,4.5]]))
-
-# Model Persistence
-# from sklearn import datasets
-
-# iris = datasets.load_iris()
-# X, y = iris.data, iris.target
-
-# from sklearn.model_selection import train_test_split
-# X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25,random_state=25)
-
-# from sklearn import svm
-# clf = svm.SVC()
-# clf.fit(X_train, y_train)
-
-# from sklearn.externals import joblib
-#joblib.dump(clf, 'mymodel.pkl') 
-# clf = joblib.load('mymodel.pkl') 
-
-# print(clf.predict(X_test)[:20])
-# print(y_test[:20])
-# accuracy = clf.score(X_test,y_test)
-# print(accuracy)
 

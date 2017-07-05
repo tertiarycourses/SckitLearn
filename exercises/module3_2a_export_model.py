@@ -3,7 +3,7 @@
 # Author: Dr Alfred Ang
 # Date: 25 Dec 2016
 
-# Module 3.2a: Pickle
+# Module 3.2a: Joblib
 
 from sklearn import datasets
 iris = datasets.load_iris()

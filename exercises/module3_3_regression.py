@@ -22,7 +22,7 @@
 # plt.plot(X,lm.predict(X),'-r')
 # plt.show()
 
-# Challenge
+# Challenge: Boston dataset
 
 # boston = datasets.load_boston()
 # X,y = boston.data, boston.target
@@ -32,22 +32,20 @@
 # print(boston.target.shape)
 
 # Boston Housing Price Challnege
-from sklearn import datasets
-boston = datasets.load_boston()
-X,y = boston.data,boston.target
+# from sklearn import datasets
+# boston = datasets.load_boston()
+# X,y = boston.data,boston.target
 
-# print(X)
 # from sklearn.preprocessing import scale
 # X = scale(X)
-# print(X)
 
-from sklearn import linear_model
-lm = linear_model.LinearRegression()
-lm.fit(X,y)
+# from sklearn import linear_model
+# lm = linear_model.LinearRegression()
+# lm.fit(X,y)
 
-import matplotlib.pyplot as plt 
-plt.scatter(y,lm.predict(X))
-plt.xlabel('Price')
-plt.ylabel('Predict Price')
-plt.show()
+# import matplotlib.pyplot as plt 
+# plt.scatter(y,lm.predict(X))
+# plt.xlabel('Price')
+# plt.ylabel('Predict Price')
+# plt.show()
 

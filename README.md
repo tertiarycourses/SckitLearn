@@ -6,6 +6,7 @@ These are the exercise files used for [Python Machine Learning with Scikits Lear
 The course outline can be found in 
 
 https://www.tertiarycourses.com.sg/python-machine-learning-with-scikits-learn-training.html
+https://www.tertiarycourses.com.my/python-machine-learning-with-scikit-learn-training.html
 
 <p><strong>Module 1 Getting Started on Scikit-Learn</strong></p>
 <ul>
